@@ -1,0 +1,14 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="suite1" thread-count="2" parallel="methods">
+<parameter name="rangevalue" value="4"/> 
+<listeners>
+    <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+    <listener class-name="com.appdirect.listener.SuiteListener"/>
+    <listener class-name="com.appdirect.listener.TestListener"/>
+ </listeners>
+    <test name="test1">
+        <classes>
+            <class name="com.appdirect.automation.AutomatePrices" />   
+        </classes>
+    </test>
+</suite>

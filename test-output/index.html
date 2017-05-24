@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />
+    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">1 suite</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
+          <img class="collapse-all-icon" src="collapseall.gif">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" class="navigator-link" panel-name="suite-Default_suite">
+              <span class="suite-name border-passed">Default suite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="test-xml-Default_suite">
+                    <span>testng-customsuite.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="testlist-Default_suite">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="group-Default_suite">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="times-Default_suite">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="reporter-Default_suite">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-Default_suite">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="chronological-Default_suite">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">2 methods,   2 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Default_suite" class="hide-methods passed suite-Default_suite"> (hide)</a> <!-- hide-methods passed suite-Default_suite -->
+                      <a href="#" panel-name="suite-Default_suite" class="show-methods passed suite-Default_suite"> (show)</a> <!-- show-methods passed suite-Default_suite -->
+                    </span>
+                    <div class="method-list-content passed suite-Default_suite">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.appdirect.automation.AutomatePrices" hash-for-method="testMarketplacePriceAddons">testMarketplacePriceAddons</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.appdirect.automation.AutomatePrices" hash-for-method="testMarketplacePriceEditions">testMarketplacePriceEditions</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Default_suite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Default_suite" class="panel Default_suite">
+          <div class="suite-Default_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.appdirect.automation.AutomatePrices</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testMarketplacePriceAddons">
+                  </a> <!-- testMarketplacePriceAddons -->
+                  <span class="method-name">testMarketplacePriceAddons</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testMarketplacePriceEditions">
+                  </a> <!-- testMarketplacePriceEditions -->
+                  <span class="method-name">testMarketplacePriceEditions</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Default_suite-class-passed -->
+        </div> <!-- panel Default_suite -->
+        <div panel-name="test-xml-Default_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">/private/var/folders/xn/lt8zh5v90kn40v1b93d6h7q9ppg93y/T/testng-eclipse--1680345150/testng-customsuite.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;Default suite&quot;&gt;
+  &lt;test verbose=&quot;2&quot; name=&quot;Default test&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.appdirect.automation.AutomatePrices&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Default test --&gt;
+&lt;/suite&gt; &lt;!-- Default suite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Default_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Default suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Default test (1 class)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Default_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Default suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Default_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Default suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Default_suite');
+function tableData_Default_suite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(2);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'testMarketplacePriceEditions')
+data.setCell(0, 2, 'com.appdirect.automation.AutomatePrices')
+data.setCell(0, 3, 81348);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'testMarketplacePriceAddons')
+data.setCell(1, 2, 'com.appdirect.automation.AutomatePrices')
+data.setCell(1, 3, 12352);
+window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 1 minutes</span>
+              <div id="times-div-Default_suite">
+              </div> <!-- times-div-Default_suite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Default_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Default suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">testMarketplacePriceAddons</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">2017-05-23 18:19:41.641	[Info]	Clicked log in button on Home Page</span>
+                <span class="reporter-method-output">2017-05-23 18:19:45.237	[Info]	Clicked Log In button on Login Page</span>
+                <span class="reporter-method-output">2017-05-23 18:19:45.238	[Info]	
+Total SKU= 0 Edition with App Id=0 Editions Found= 0</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">testMarketplacePriceEditions</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">2017-05-23 18:19:53.361	[Info]	Clicked log in button on Home Page</span>
+                <span class="reporter-method-output">2017-05-23 18:19:56.83	[Info]	Clicked Log In button on Login Page</span>
+                <span class="reporter-method-output">
+
+3559</span>
+                <span class="reporter-method-output">2017-05-23 18:19:56.83	[Info]	
+1	Opening: Office 365 Business
+Offer id:5c9fd4cc-edce-44a8-8e91-07df09744609</span>
+                <span class="reporter-method-output">2017-05-23 18:19:59.583	[Info]	Office 365 Business</span>
+                <span class="reporter-method-output">Id matching</span>
+                <span class="reporter-method-output">2017-05-23 18:20:01.006	[Info]	USD	[OLD VALUE] : 8.3  [NEW VALUE] :8.3</span>
+                <span class="reporter-method-output">2017-05-23 18:20:01.006	[Info]	EUR	[OLD VALUE] : 8.8  [NEW VALUE] :8.80</span>
+                <span class="reporter-method-output">2017-05-23 18:20:01.006	[Info]	GBP	[OLD VALUE] : 7.9  [NEW VALUE] :7.90</span>
+                <span class="reporter-method-output">2017-05-23 18:20:01.006	[Info]	AUD	[OLD VALUE] : 12  [NEW VALUE] :12</span>
+                <span class="reporter-method-output">2017-05-23 18:20:01.007	[Info]	Prices are not changed</span>
+                <span class="reporter-method-output">
+
+3577</span>
+                <span class="reporter-method-output">2017-05-23 18:20:01.008	[Info]	
+2	Opening: Skype for Business Online Plan 2
+Offer id:14c61739-b45a-42c0-832c-d330972d3173</span>
+                <span class="reporter-method-output">2017-05-23 18:20:03.042	[Info]	Skype for Business Online Plan 2</span>
+                <span class="reporter-method-output">Id matching</span>
+                <span class="reporter-method-output">2017-05-23 18:20:04.358	[Info]	USD	[OLD VALUE] : 5.5  [NEW VALUE] :5.5</span>
+                <span class="reporter-method-output">2017-05-23 18:20:04.358	[Info]	EUR	[OLD VALUE] : 4.6  [NEW VALUE] :4.60</span>
+                <span class="reporter-method-output">2017-05-23 18:20:04.358	[Info]	GBP	[OLD VALUE] : 4.2  [NEW VALUE] :4.20</span>
+                <span class="reporter-method-output">2017-05-23 18:20:04.358	[Info]	AUD	[OLD VALUE] : 7  [NEW VALUE] :7</span>
+                <span class="reporter-method-output">2017-05-23 18:20:04.358	[Info]	Prices are not changed</span>
+                <span class="reporter-method-output">
+
+3556</span>
+                <span class="reporter-method-output">2017-05-23 18:20:04.359	[Info]	
+3	Opening: Office 365 Business Essentials
+Offer id:bd938f12-058f-4927-bba3-ae36b1d2501c</span>
+                <span class="reporter-method-output">2017-05-23 18:20:06.586	[Info]	Office 365 Business Essentials</span>
+                <span class="reporter-method-output">Id matching</span>
+                <span class="reporter-method-output">2017-05-23 18:20:07.556	[Info]	USD	[OLD VALUE] : 5  [NEW VALUE] :5</span>
+                <span class="reporter-method-output">2017-05-23 18:20:07.556	[Info]	EUR	[OLD VALUE] : 4.2  [NEW VALUE] :4.20</span>
+                <span class="reporter-method-output">2017-05-23 18:20:07.556	[Info]	GBP	[OLD VALUE] : 3.8  [NEW VALUE] :3.80</span>
+                <span class="reporter-method-output">2017-05-23 18:20:07.557	[Info]	AUD	[OLD VALUE] : 6.4  [NEW VALUE] :6.4</span>
+                <span class="reporter-method-output">2017-05-23 18:20:07.557	[Info]	Prices are not changed</span>
+                <span class="reporter-method-output">
+
+3562</span>
+                <span class="reporter-method-output">2017-05-23 18:20:07.557	[Info]	
+4	Opening: Office 365 Enterprise E1
+Offer id:91fd106f-4b2c-4938-95ac-f54f74e9a239</span>
+                <span class="reporter-method-output">2017-05-23 18:20:09.787	[Info]	Office 365 Enterprise E1</span>
+                <span class="reporter-method-output">Id matching</span>
+                <span class="reporter-method-output">2017-05-23 18:20:10.762	[Info]	USD	[OLD VALUE] : 8  [NEW VALUE] :8</span>
+                <span class="reporter-method-output">2017-05-23 18:20:10.762	[Info]	EUR	[OLD VALUE] : 6.8  [NEW VALUE] :6.80</span>
+                <span class="reporter-method-output">2017-05-23 18:20:10.762	[Info]	GBP	[OLD VALUE] : 6  [NEW VALUE] :6.00</span>
+                <span class="reporter-method-output">2017-05-23 18:20:10.762	[Info]	AUD	[OLD VALUE] : 10.2  [NEW VALUE] :10.2</span>
+                <span class="reporter-method-output">2017-05-23 18:20:10.762	[Info]	Prices are not changed</span>
+                <span class="reporter-method-output">
+
+3561</span>
+                <span class="reporter-method-output">2017-05-23 18:20:10.763	[Info]	
+5	Opening: SharePoint Online (Plan 2)
+Offer id:69c67983-cf78-4102-83f6-3e5fd246864f</span>
+                <span class="reporter-method-output">2017-05-23 18:20:12.764	[Info]	SharePoint Online (Plan 2)</span>
+                <span class="reporter-method-output">Id matching</span>
+                <span class="reporter-method-output">2017-05-23 18:20:13.784	[Info]	USD	[OLD VALUE] : 10  [NEW VALUE] :10</span>
+                <span class="reporter-method-output">2017-05-23 18:20:13.784	[Info]	EUR	[OLD VALUE] : 8.4  [NEW VALUE] :8.40</span>
+                <span class="reporter-method-output">2017-05-23 18:20:13.784	[Info]	GBP	[OLD VALUE] : 7.5  [NEW VALUE] :7.50</span>
+                <span class="reporter-method-output">2017-05-23 18:20:13.785	[Info]	AUD	[OLD VALUE] : 12.7  [NEW VALUE] :12.7</span>
+                <span class="reporter-method-output">2017-05-23 18:20:13.785	[Info]	Prices are not changed</span>
+                <span class="reporter-method-output">
+
+3572</span>
+                <span class="reporter-method-output">2017-05-23 18:20:13.785	[Info]	
+6	Opening: Exchange Online Plan 2
+Offer id:2f707c7c-2433-49a5-a437-9ca7cf40d3eb</span>
+                <span class="reporter-method-output">2017-05-23 18:20:15.913	[Info]	Exchange Online Plan 2</span>
+                <span class="reporter-method-output">Id matching</span>
+                <span class="reporter-method-output">2017-05-23 18:20:16.933	[Info]	USD	[OLD VALUE] : 8  [NEW VALUE] :8</span>
+                <span class="reporter-method-output">2017-05-23 18:20:16.933	[Info]	EUR	[OLD VALUE] : 6.8  [NEW VALUE] :6.80</span>
+                <span class="reporter-method-output">2017-05-23 18:20:16.933	[Info]	GBP	[OLD VALUE] : 6  [NEW VALUE] :6.00</span>
+                <span class="reporter-method-output">2017-05-23 18:20:16.933	[Info]	AUD	[OLD VALUE] : 10.2  [NEW VALUE] :10.2</span>
+                <span class="reporter-method-output">2017-05-23 18:20:16.933	[Info]	Prices are not changed</span>
+                <span class="reporter-method-output">
+
+3562</span>
+                <span class="reporter-method-output">2017-05-23 18:20:16.933	[Info]	
+7	Opening: Office 365 Enterprise E3
+Offer id:796b6b5f-613c-4e24-a17c-eba730d49c02</span>
+                <span class="reporter-method-output">2017-05-23 18:20:19.122	[Info]	Office 365 Enterprise E3</span>
+                <span class="reporter-method-output">Id matching</span>
+                <span class="reporter-method-output">2017-05-23 18:20:20.446	[Info]	USD	[OLD VALUE] : 20  [NEW VALUE] :20</span>
+                <span class="reporter-method-output">2017-05-23 18:20:20.446	[Info]	EUR	[OLD VALUE] : 19.7  [NEW VALUE] :19.70</span>
+                <span class="reporter-method-output">2017-05-23 18:20:20.446	[Info]	GBP	[OLD VALUE] : 17.6  [NEW VALUE] :17.60</span>
+                <span class="reporter-method-output">2017-05-23 18:20:20.446	[Info]	AUD	[OLD VALUE] : 26.9  [NEW VALUE] :26.9</span>
+                <span class="reporter-method-output">2017-05-23 18:20:20.446	[Info]	Prices are not changed</span>
+                <span class="reporter-method-output">
+
+3575</span>
+                <span class="reporter-method-output">2017-05-23 18:20:20.447	[Info]	
+8	Opening: OneDrive for Business (Plan 1)
+Offer id:90d3615e-aa96-478e-b6ce-8eb1e9a96b4b</span>
+                <span class="reporter-method-output">2017-05-23 18:20:22.488	[Info]	OneDrive for Business (Plan 1)</span>
+                <span class="reporter-method-output">Id matching</span>
+                <span class="reporter-method-output">2017-05-23 18:20:23.452	[Info]	USD	[OLD VALUE] : 5  [NEW VALUE] :5</span>
+                <span class="reporter-method-output">2017-05-23 18:20:23.452	[Info]	EUR	[OLD VALUE] : 4.2  [NEW VALUE] :4.20</span>
+                <span class="reporter-method-output">2017-05-23 18:20:23.452	[Info]	GBP	[OLD VALUE] : 3.8  [NEW VALUE] :3.80</span>
+                <span class="reporter-method-output">2017-05-23 18:20:23.452	[Info]	AUD	[OLD VALUE] : 6.4  [NEW VALUE] :6.4</span>
+                <span class="reporter-method-output">2017-05-23 18:20:23.452	[Info]	Prices are not changed</span>
+                <span class="reporter-method-output">
+
+3560</span>
+                <span class="reporter-method-output">2017-05-23 18:20:23.452	[Info]	
+9	Opening: Power BI Pro
+Offer id:800f4f3b-cfe1-42c1-9cea-675512810488</span>
+                <span class="reporter-method-output">2017-05-23 18:20:25.452	[Info]	Power BI Pro</span>
+                <span class="reporter-method-output">Id matching</span>
+                <span class="reporter-method-output">2017-05-23 18:20:26.473	[Info]	USD	[OLD VALUE] : 10  [NEW VALUE] :10</span>
+                <span class="reporter-method-output">2017-05-23 18:20:26.473	[Info]	EUR	[OLD VALUE] : 8.4  [NEW VALUE] :8.40</span>
+                <span class="reporter-method-output">2017-05-23 18:20:26.473	[Info]	GBP	[OLD VALUE] : 7.5  [NEW VALUE] :7.50</span>
+                <span class="reporter-method-output">2017-05-23 18:20:26.473	[Info]	AUD	[OLD VALUE] : 12.7  [NEW VALUE] :12.7</span>
+                <span class="reporter-method-output">2017-05-23 18:20:26.473	[Info]	Prices are not changed</span>
+                <span class="reporter-method-output">
+
+3567</span>
+                <span class="reporter-method-output">2017-05-23 18:20:26.473	[Info]	
+10	Opening: Windows 10 Enterprise E5
+Offer id:f7f342b3-177c-41f2-8896-7b06c54fc977</span>
+                <span class="reporter-method-output">2017-05-23 18:20:28.637	[Info]	Windows 10 Enterprise E5</span>
+                <span class="reporter-method-output">Id matching</span>
+                <span class="reporter-method-output">2017-05-23 18:20:29.59	[Info]	USD	[OLD VALUE] : 14  [NEW VALUE] :14</span>
+                <span class="reporter-method-output">2017-05-23 18:20:29.591	[Info]	EUR	[OLD VALUE] : 13.8  [NEW VALUE] :13.80</span>
+                <span class="reporter-method-output">2017-05-23 18:20:29.591	[Info]	GBP	[OLD VALUE] : 12.3  [NEW VALUE] :12.30</span>
+                <span class="reporter-method-output">2017-05-23 18:20:29.591	[Info]	AUD	[OLD VALUE] : 18.8  [NEW VALUE] :18.8</span>
+                <span class="reporter-method-output">2017-05-23 18:20:29.591	[Info]	Prices are not changed</span>
+                <span class="reporter-method-output">
+
+3562</span>
+                <span class="reporter-method-output">2017-05-23 18:20:29.591	[Info]	
+11	Opening: Office 365 Enterprise E5
+Offer id:a044b16a-1861-4308-8086-a3a3b506fac2</span>
+                <span class="reporter-method-output">2017-05-23 18:20:31.819	[Info]	Office 365 Enterprise E5</span>
+                <span class="reporter-method-output">Id matching</span>
+                <span class="reporter-method-output">2017-05-23 18:20:33.122	[Info]	USD	[OLD VALUE] : 35  [NEW VALUE] :35</span>
+                <span class="reporter-method-output">2017-05-23 18:20:33.122	[Info]	EUR	[OLD VALUE] : 34.4  [NEW VALUE] :34.40</span>
+                <span class="reporter-method-output">2017-05-23 18:20:33.122	[Info]	GBP	[OLD VALUE] : 30.8  [NEW VALUE] :30.80</span>
+                <span class="reporter-method-output">2017-05-23 18:20:33.122	[Info]	AUD	[OLD VALUE] : 47  [NEW VALUE] :47</span>
+                <span class="reporter-method-output">2017-05-23 18:20:33.122	[Info]	Prices are not changed</span>
+                <span class="reporter-method-output">
+
+3562</span>
+                <span class="reporter-method-output">2017-05-23 18:20:33.123	[Info]	
+12	Opening: Office 365 ProPlus
+Offer id:be57ff4c-100c-4f1f-b82d-f1c5ab63a665</span>
+                <span class="reporter-method-output">2017-05-23 18:20:35.361	[Info]	Office 365 ProPlus</span>
+                <span class="reporter-method-output">Id matching</span>
+                <span class="reporter-method-output">2017-05-23 18:20:36.658	[Info]	USD	[OLD VALUE] : 12  [NEW VALUE] :12</span>
+                <span class="reporter-method-output">2017-05-23 18:20:36.658	[Info]	EUR	[OLD VALUE] : 12.9  [NEW VALUE] :12.90</span>
+                <span class="reporter-method-output">2017-05-23 18:20:36.658	[Info]	GBP	[OLD VALUE] : 11.5  [NEW VALUE] :11.50</span>
+                <span class="reporter-method-output">2017-05-23 18:20:36.658	[Info]	AUD	[OLD VALUE] : 17.4  [NEW VALUE] :17.4</span>
+                <span class="reporter-method-output">2017-05-23 18:20:36.658	[Info]	Prices are not changed</span>
+                <span class="reporter-method-output">
+
+3564</span>
+                <span class="reporter-method-output">2017-05-23 18:20:36.658	[Info]	
+13	Opening: Exchange Online Protection
+Offer id:d903a2db-bf6f-4434-83f1-21ba44017813</span>
+                <span class="reporter-method-output">2017-05-23 18:20:38.778	[Info]	Exchange Online Protection</span>
+                <span class="reporter-method-output">Id matching</span>
+                <span class="reporter-method-output">2017-05-23 18:20:39.729	[Info]	USD	[OLD VALUE] : 1  [NEW VALUE] :1</span>
+                <span class="reporter-method-output">2017-05-23 18:20:39.729	[Info]	EUR	[OLD VALUE] : 0.9  [NEW VALUE] :0.90</span>
+                <span class="reporter-method-output">2017-05-23 18:20:39.729	[Info]	GBP	[OLD VALUE] : 0.8  [NEW VALUE] :0.80</span>
+                <span class="reporter-method-output">2017-05-23 18:20:39.729	[Info]	AUD	[OLD VALUE] : 1.3  [NEW VALUE] :1.3</span>
+                <span class="reporter-method-output">2017-05-23 18:20:39.729	[Info]	Prices are not changed</span>
+                <span class="reporter-method-output">
+
+3556</span>
+                <span class="reporter-method-output">2017-05-23 18:20:39.729	[Info]	
+14	Opening: Office 365 Business Premium
+Offer id:031c9e47-4802-4248-838e-778fb1d2cc05</span>
+                <span class="reporter-method-output">2017-05-23 18:20:41.906	[Info]	Office 365 Business Premium</span>
+                <span class="reporter-method-output">Id matching</span>
+                <span class="reporter-method-output">2017-05-23 18:20:43.214	[Info]	USD	[OLD VALUE] : 12.5  [NEW VALUE] :12.5</span>
+                <span class="reporter-method-output">2017-05-23 18:20:43.214	[Info]	EUR	[OLD VALUE] : 10.6  [NEW VALUE] :10.60</span>
+                <span class="reporter-method-output">2017-05-23 18:20:43.214	[Info]	GBP	[OLD VALUE] : 9.4  [NEW VALUE] :9.40</span>
+                <span class="reporter-method-output">2017-05-23 18:20:43.214	[Info]	AUD	[OLD VALUE] : 15.9  [NEW VALUE] :15.9</span>
+                <span class="reporter-method-output">2017-05-23 18:20:43.214	[Info]	Prices are not changed</span>
+                <span class="reporter-method-output">
+
+3550</span>
+                <span class="reporter-method-output">2017-05-23 18:20:43.214	[Info]	
+15	Opening: Visio Pro for Office 365
+Offer id:b4d4b7f4-4089-43b6-9c44-de97b760fb11</span>
+                <span class="reporter-method-output">2017-05-23 18:20:45.305	[Info]	Visio Pro for Office 365</span>
+                <span class="reporter-method-output">Id matching</span>
+                <span class="reporter-method-output">2017-05-23 18:20:46.672	[Info]	USD	[OLD VALUE] : 13  [NEW VALUE] :13</span>
+                <span class="reporter-method-output">2017-05-23 18:20:46.672	[Info]	EUR	[OLD VALUE] : 11  [NEW VALUE] :11.00</span>
+                <span class="reporter-method-output">2017-05-23 18:20:46.672	[Info]	GBP	[OLD VALUE] : 9.8  [NEW VALUE] :9.80</span>
+                <span class="reporter-method-output">2017-05-23 18:20:46.672	[Info]	AUD	[OLD VALUE] : 16.6  [NEW VALUE] :16.6</span>
+                <span class="reporter-method-output">2017-05-23 18:20:46.672	[Info]	Prices are not changed</span>
+                <span class="reporter-method-output">
+
+3567</span>
+                <span class="reporter-method-output">2017-05-23 18:20:46.672	[Info]	
+16	Opening: Windows 10 Enterprise E3
+Offer id:62F28745-3F17-4337-BE15-EA4B8C8DC872</span>
+                <span class="reporter-method-output">2017-05-23 18:20:48.774	[Info]	Windows 10 Enterprise E3</span>
+                <span class="reporter-method-output">Id matching</span>
+                <span class="reporter-method-output">2017-05-23 18:20:50.071	[Info]	USD	[OLD VALUE] : 7  [NEW VALUE] :7</span>
+                <span class="reporter-method-output">2017-05-23 18:20:50.071	[Info]	EUR	[OLD VALUE] : 5.9  [NEW VALUE] :5.90</span>
+                <span class="reporter-method-output">2017-05-23 18:20:50.071	[Info]	GBP	[OLD VALUE] : 5.3  [NEW VALUE] :5.30</span>
+                <span class="reporter-method-output">2017-05-23 18:20:50.071	[Info]	AUD	[OLD VALUE] : 8.9  [NEW VALUE] :8.9</span>
+                <span class="reporter-method-output">2017-05-23 18:20:50.071	[Info]	Prices are not changed</span>
+                <span class="reporter-method-output">
+
+3562</span>
+                <span class="reporter-method-output">2017-05-23 18:20:50.071	[Info]	
+17	Opening: Office 365 Enterprise E4
+Offer id:8909e28e-5832-42f4-9886-b0a5545f3645</span>
+                <span class="reporter-method-output">2017-05-23 18:20:52.292	[Info]	Office 365 Enterprise E4</span>
+                <span class="reporter-method-output">Id matching</span>
+                <span class="reporter-method-output">2017-05-23 18:20:53.215	[Info]	USD	[OLD VALUE] : 22  [NEW VALUE] :22</span>
+                <span class="reporter-method-output">2017-05-23 18:20:53.215	[Info]	EUR	[OLD VALUE] : 21.6  [NEW VALUE] :21.60</span>
+                <span class="reporter-method-output">2017-05-23 18:20:53.215	[Info]	GBP	[OLD VALUE] : 19.3  [NEW VALUE] :19.30</span>
+                <span class="reporter-method-output">2017-05-23 18:20:53.215	[Info]	AUD	[OLD VALUE] : 29.6  [NEW VALUE] :29.6</span>
+                <span class="reporter-method-output">2017-05-23 18:20:53.215	[Info]	Prices are not changed</span>
+                <span class="reporter-method-output">
+
+3561</span>
+                <span class="reporter-method-output">2017-05-23 18:20:53.216	[Info]	
+18	Opening: SharePoint Online (Plan 1)
+Offer id:ff7a4f5b-4973-4241-8c43-80f2be39311d</span>
+                <span class="reporter-method-output">2017-05-23 18:20:55.195	[Info]	SharePoint Online (Plan 1)</span>
+                <span class="reporter-method-output">Id matching</span>
+                <span class="reporter-method-output">2017-05-23 18:20:56.479	[Info]	USD	[OLD VALUE] : 5  [NEW VALUE] :5</span>
+                <span class="reporter-method-output">2017-05-23 18:20:56.479	[Info]	EUR	[OLD VALUE] : 4.2  [NEW VALUE] :4.20</span>
+                <span class="reporter-method-output">2017-05-23 18:20:56.479	[Info]	GBP	[OLD VALUE] : 3.8  [NEW VALUE] :3.80</span>
+                <span class="reporter-method-output">2017-05-23 18:20:56.479	[Info]	AUD	[OLD VALUE] : 6.4  [NEW VALUE] :6.4</span>
+                <span class="reporter-method-output">2017-05-23 18:20:56.479	[Info]	Prices are not changed</span>
+                <span class="reporter-method-output">
+
+3575</span>
+                <span class="reporter-method-output">2017-05-23 18:20:56.479	[Info]	
+19	Opening: OneDrive for Business (Plan 2)
+Offer id:bf1f6907-1f8e-4f05-b327-4896d1395c15</span>
+                <span class="reporter-method-output">2017-05-23 18:20:58.506	[Info]	OneDrive for Business (Plan 2)</span>
+                <span class="reporter-method-output">Id matching</span>
+                <span class="reporter-method-output">2017-05-23 18:20:59.788	[Info]	USD	[OLD VALUE] : 10  [NEW VALUE] :10</span>
+                <span class="reporter-method-output">2017-05-23 18:20:59.788	[Info]	EUR	[OLD VALUE] : 8.4  [NEW VALUE] :8.40</span>
+                <span class="reporter-method-output">2017-05-23 18:20:59.788	[Info]	GBP	[OLD VALUE] : 7.5  [NEW VALUE] :7.50</span>
+                <span class="reporter-method-output">2017-05-23 18:20:59.788	[Info]	AUD	[OLD VALUE] : 12.7  [NEW VALUE] :12.7</span>
+                <span class="reporter-method-output">2017-05-23 18:20:59.788	[Info]	Prices are not changed</span>
+                <span class="reporter-method-output">
+
+3572</span>
+                <span class="reporter-method-output">2017-05-23 18:20:59.788	[Info]	
+20	Opening: Exchange Online Plan 1
+Offer id:195416c1-3447-423a-b37b-ee59a99a19c4</span>
+                <span class="reporter-method-output">2017-05-23 18:21:01.961	[Info]	Exchange Online Plan 1</span>
+                <span class="reporter-method-output">Id matching</span>
+                <span class="reporter-method-output">2017-05-23 18:21:03.244	[Info]	USD	[OLD VALUE] : 4  [NEW VALUE] :4</span>
+                <span class="reporter-method-output">2017-05-23 18:21:03.244	[Info]	EUR	[OLD VALUE] : 3.4  [NEW VALUE] :3.40</span>
+                <span class="reporter-method-output">2017-05-23 18:21:03.244	[Info]	GBP	[OLD VALUE] : 3  [NEW VALUE] :3.00</span>
+                <span class="reporter-method-output">2017-05-23 18:21:03.244	[Info]	AUD	[OLD VALUE] : 5.1  [NEW VALUE] :5.1</span>
+                <span class="reporter-method-output">2017-05-23 18:21:03.244	[Info]	Prices are not changed</span>
+                <span class="reporter-method-output">
+
+3577</span>
+                <span class="reporter-method-output">2017-05-23 18:21:03.244	[Info]	
+21	Opening: Skype for Business Online Plan 1
+Offer id:aca0c06c-890d-4abb-83cf-bc519a2565e5</span>
+                <span class="reporter-method-output">2017-05-23 18:21:05.239	[Info]	Skype for Business Online Plan 1</span>
+                <span class="reporter-method-output">Id matching</span>
+                <span class="reporter-method-output">2017-05-23 18:21:06.588	[Info]	USD	[OLD VALUE] : 2  [NEW VALUE] :2</span>
+                <span class="reporter-method-output">2017-05-23 18:21:06.588	[Info]	EUR	[OLD VALUE] : 1.7  [NEW VALUE] :1.70</span>
+                <span class="reporter-method-output">2017-05-23 18:21:06.588	[Info]	GBP	[OLD VALUE] : 1.5  [NEW VALUE] :1.50</span>
+                <span class="reporter-method-output">2017-05-23 18:21:06.588	[Info]	AUD	[OLD VALUE] : 2.6  [NEW VALUE] :2.6</span>
+                <span class="reporter-method-output">2017-05-23 18:21:06.588	[Info]	Prices are not changed</span>
+                <span class="reporter-method-output">2017-05-23 18:21:06.588	[Info]	
+Total SKU= 21 Edition with App Id=21 Editions Found= 21</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Default_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Default_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.appdirect.automation.AutomatePrices</div> <!-- chronological-class-name -->
+              <div class="configuration-suite before">
+                <span class="method-name">sheetAccess</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-suite before -->
+              <div class="configuration-test before">
+                <span class="method-name">loadBrowser</span>
+                <span class="method-start">6421 ms</span>
+              </div> <!-- configuration-test before -->
+              <div class="test-method">
+                <span class="method-name">testMarketplacePriceAddons</span>
+                <span class="method-start">7771 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testMarketplacePriceEditions</span>
+                <span class="method-start">20125 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-test after">
+                <span class="method-name">testOutput</span>
+                <span class="method-start">101475 ms</span>
+              </div> <!-- configuration-test after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>

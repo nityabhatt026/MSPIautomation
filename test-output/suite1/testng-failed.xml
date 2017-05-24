@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="2" guice-stage="DEVELOPMENT" name="Failed suite [suite1]" parallel="methods">
+  <parameter name="rangevalue" value="4"/>
+  <listeners>
+    <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+    <listener class-name="com.appdirect.listener.SuiteListener"/>
+    <listener class-name="com.appdirect.listener.TestListener"/>
+  </listeners>
+  <test name="test1(failed)" parallel="methods">
+    <classes>
+      <class name="com.appdirect.automation.AutomatePrices">
+        <methods>
+          <include name="sheetAccess"/>
+          <include name="testMarketplacePriceEditions"/>
+          <include name="testOutput"/>
+          <include name="loadBrowser"/>
+        </methods>
+      </class> <!-- com.appdirect.automation.AutomatePrices -->
+    </classes>
+  </test> <!-- test1(failed) -->
+</suite> <!-- Failed suite [suite1] -->
