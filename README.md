@@ -10,7 +10,7 @@ it starts searching the editions by name and compare the prices and this loop wi
 At the end CSVs will be generated which contains the editions in which prices are compared .It contains the edition name, 
 offer code, old price, new price.
 After comparing prices from updations will take place in orchid environment
-Packages:: There are total 5 packages a)Test b)Utils c) d)Pages e)Main
+Packages::  a)Test b)Utils c)Pages d)Main
 
 How to Run:: 1)In the com.appdirect.automation run the AutomatePrices.java through TestNG. 
              2)Run testing.xml directly
